@@ -1,0 +1,1010 @@
+Selfcollide
+Traceback (most recent call last):
+  File "main.py", line 95, in <module>
+    termdraw.f.write(str("Delka hada: " + len(snake.tail))+"\n")
+TypeError: can only concatenate str (not "int") to str
+Selfcollide
+Traceback (most recent call last):
+  File "main.py", line 95, in <module>
+    termdraw.f.write(str("Delka hada: " + len(snake.tail))+"\n")
+TypeError: can only concatenate str (not "int") to str
+Selfcollide
+Traceback (most recent call last):
+  File "main.py", line 95, in <module>
+    termdraw.f.write(str("Delka hada: " + len(snake.tail))+"\n")
+TypeError: can only concatenate str (not "int") to str
+Selfcollide
+Traceback (most recent call last):
+  File "main.py", line 95, in <module>
+    termdraw.f.write(str("Delka hada: " + len(snake.tail))+"\n")
+TypeError: can only concatenate str (not "int") to str
+Selfcollide
+Traceback (most recent call last):
+  File "main.py", line 95, in <module>
+    termdraw.f.write(str("Delka hada: " + len(snake.tail))+"\n")
+TypeError: can only concatenate str (not "int") to str
+Selfcollide
+Traceback (most recent call last):
+  File "main.py", line 95, in <module>
+    termdraw.f.write(str("Delka hada: " + len(snake.tail))+"\n")
+TypeError: can only concatenate str (not "int") to str
+Selfcollide
+Traceback (most recent call last):
+  File "main.py", line 95, in <module>
+    termdraw.f.write(str("Delka hada: " + len(snake.tail))+"\n")
+TypeError: can only concatenate str (not "int") to str
+Traceback (most recent call last):
+  File "main.py", line 94, in <module>
+    if not mainloop():
+  File "main.py", line 71, in mainloop
+    snake.dir = ml.ml(snake, apple)
+  File "/home/basta/Documents/python/mlsnake/ml.py", line 164, in ml
+    state = State(-1,apple_dir, poss_dir)
+  File "/home/basta/Documents/python/mlsnake/ml.py", line 36, in __init__
+    dir_weights[i] = 0.2 + random.uniform(-0.2, 0.2)
+TypeError: 'NoneType' object does not support item assignment
+Traceback (most recent call last):
+  File "main.py", line 94, in <module>
+    if not mainloop():
+  File "main.py", line 71, in mainloop
+    snake.dir = ml.ml(snake, apple)
+  File "/home/basta/Documents/python/mlsnake/ml.py", line 164, in ml
+    state = State(-1,apple_dir, poss_dir)
+  File "/home/basta/Documents/python/mlsnake/ml.py", line 36, in __init__
+    dir_weights[i] = 0.2 + random.uniform(-0.2, 0.2)
+TypeError: 'NoneType' object does not support item assignment
+Traceback (most recent call last):
+  File "main.py", line 94, in <module>
+    if not mainloop():
+  File "main.py", line 71, in mainloop
+    snake.dir = ml.ml(snake, apple)
+  File "/home/basta/Documents/python/mlsnake/ml.py", line 164, in ml
+    state = State(-1,apple_dir, poss_dir)
+  File "/home/basta/Documents/python/mlsnake/ml.py", line 36, in __init__
+    dir_weights[i] = 0.2 + random.uniform(-0.2, 0.2)
+TypeError: 'NoneType' object does not support item assignment
+Traceback (most recent call last):
+  File "main.py", line 94, in <module>
+    if not mainloop():
+  File "main.py", line 71, in mainloop
+    snake.dir = ml.ml(snake, apple)
+  File "/home/basta/Documents/python/mlsnake/ml.py", line 164, in ml
+    state = State(-1,apple_dir, poss_dir)
+  File "/home/basta/Documents/python/mlsnake/ml.py", line 36, in __init__
+    dir_weights[i] = 0.2 + random.uniform(-0.2, 0.2)
+TypeError: 'NoneType' object does not support item assignment
+Traceback (most recent call last):
+  File "main.py", line 94, in <module>
+    if not mainloop():
+  File "main.py", line 71, in mainloop
+    snake.dir = ml.ml(snake, apple)
+  File "/home/basta/Documents/python/mlsnake/ml.py", line 164, in ml
+    state = State(-1,apple_dir, poss_dir)
+  File "/home/basta/Documents/python/mlsnake/ml.py", line 36, in __init__
+    dir_weights[i] = 0.2 + random.uniform(-0.2, 0.2)
+TypeError: 'NoneType' object does not support item assignment
+Selfcollide
+Traceback (most recent call last):
+  File "main.py", line 95, in <module>
+    termdraw.f.write(str("Delka hada: " + len(snake.tail))+"\n")
+TypeError: can only concatenate str (not "int") to str
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 9
+Traceback (most recent call last):
+  File "main.py", line 94, in <module>
+    if not mainloop():
+  File "main.py", line 50, in mainloop
+    inp = termdraw.read_input()
+  File "/home/basta/Documents/python/mlsnake/termdraw.py", line 47, in read_input
+    inp = stdscr.getch()
+AttributeError: 'NoneType' object has no attribute 'getch'
+Traceback (most recent call last):
+  File "/home/basta/Documents/python/mlsnake/main.py", line 94, in <module>
+    if not mainloop():
+  File "/home/basta/Documents/python/mlsnake/main.py", line 50, in mainloop
+    inp = termdraw.read_input()
+  File "/home/basta/Documents/python/mlsnake/termdraw.py", line 47, in read_input
+    inp = stdscr.getch()
+AttributeError: 'NoneType' object has no attribute 'getch'
+Traceback (most recent call last):
+  File "/home/basta/Documents/python/mlsnake/main.py", line 94, in <module>
+    if not mainloop():
+  File "/home/basta/Documents/python/mlsnake/main.py", line 50, in mainloop
+    inp = termdraw.read_input()
+  File "/home/basta/Documents/python/mlsnake/termdraw.py", line 47, in read_input
+    inp = stdscr.getch()
+AttributeError: 'NoneType' object has no attribute 'getch'
+Traceback (most recent call last):
+  File "/home/basta/Documents/python/mlsnake/main.py", line 94, in <module>
+    if not mainloop():
+  File "/home/basta/Documents/python/mlsnake/main.py", line 50, in mainloop
+    inp = termdraw.read_input()
+  File "/home/basta/Documents/python/mlsnake/termdraw.py", line 47, in read_input
+    inp = stdscr.getch()
+AttributeError: 'NoneType' object has no attribute 'getch'
+Traceback (most recent call last):
+  File "/home/basta/Documents/python/mlsnake/main.py", line 94, in <module>
+    if not mainloop():
+  File "/home/basta/Documents/python/mlsnake/main.py", line 50, in mainloop
+    inp = termdraw.read_input()
+  File "/home/basta/Documents/python/mlsnake/termdraw.py", line 47, in read_input
+    inp = stdscr.getch()
+AttributeError: 'NoneType' object has no attribute 'getch'
+Traceback (most recent call last):
+  File "/home/basta/Documents/python/mlsnake/main.py", line 94, in <module>
+    if not mainloop():
+  File "/home/basta/Documents/python/mlsnake/main.py", line 50, in mainloop
+    inp = termdraw.read_input()
+  File "/home/basta/Documents/python/mlsnake/termdraw.py", line 47, in read_input
+    inp = stdscr.getch()
+AttributeError: 'NoneType' object has no attribute 'getch'
+Traceback (most recent call last):
+  File "/home/basta/Documents/python/mlsnake/main.py", line 94, in <module>
+    if not mainloop():
+  File "/home/basta/Documents/python/mlsnake/main.py", line 50, in mainloop
+    inp = termdraw.read_input()
+  File "/home/basta/Documents/python/mlsnake/termdraw.py", line 47, in read_input
+    inp = stdscr.getch()
+AttributeError: 'NoneType' object has no attribute 'getch'
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 12
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 17
+Selfcollide
+Delka hada: 15
+Selfcollide
+Delka hada: 9
+Selfcollide
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 13
+Selfcollide
+Delka hada: 17
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 18
+Selfcollide
+Delka hada: 33
+Selfcollide
+Delka hada: 21
+Selfcollide
+Delka hada: 16
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 17
+Selfcollide
+Delka hada: 15
+Selfcollide
+Delka hada: 24
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 16
+Selfcollide
+Delka hada: 17
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 27
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 14
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 19
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 17
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 15
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 14
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Selfcollide
+Delka hada: 6
+Selfcollide
+Selfcollide
+Delka hada: 5
+Selfcollide
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 14
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 12
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 16
+Selfcollide
+Delka hada: 14
+Selfcollide
+Delka hada: 12
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 13
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 21
+Selfcollide
+Delka hada: 14
+Selfcollide
+Delka hada: 13
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 13
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 2
+Selfcollide
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 13
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 18
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 22
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 12
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 14
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 16
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 10
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 11
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 12
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 9
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 3
+Selfcollide
+Delka hada: 6
+Selfcollide
+Delka hada: 8
+Selfcollide
+Delka hada: 7
+Selfcollide
+Delka hada: 5
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 4
+Selfcollide
+Delka hada: 2
+Selfcollide
+Delka hada: 7

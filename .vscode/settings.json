@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/home/basta/Documents/python/mlsnake/mlsnake/bin/python3",
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylamaEnabled": false,
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": false
+}
