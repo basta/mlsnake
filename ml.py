@@ -5,7 +5,7 @@ from classes import *
 
 statesave_filename = "state.txt"
 
-o = open("out.log", "a+")
+o = open("out.log", "w+")
 
 current_state = None
 
@@ -14,16 +14,16 @@ class Move:
         self.dir = dir
         self.state: State = state
 
-    def reward(self):
+    def reward(self, custom_val = 0.2):
         # Here, modify the reward mechanism
-        self.state.dir_weights[self.dir] += 0.2
+        self.state.dir_weights[self.dir] += custom_val
 
     def punish(self, custom_val=0.1):
-        if self.state.dir_weights[self.dir] > 0:
+        if self.dir != "" and self.state.dir_weights[self.dir] > 0:
             self.state.dir_weights[self.dir] -= random.uniform(0, custom_val * 2)
-            for i in self.state.dir_weights:
-                if i != self.dir:
-                    self.state.dir_weights[i] += random.uniform(0, custom_val)
+        for i in self.state.dir_weights:
+            if i != self.dir and "" != i:
+                self.state.dir_weights[i] += custom_val
 
 
 class State:
@@ -49,8 +49,8 @@ class State:
 
     def coeff_with(self, other) -> float:
         coeff = 0
-        coeff += self.similiarity_to(other) * 2 #Here, maybe increase the weight of similiarity
-        coeff += other.best_weight()[1] * 1 #Here, maybe modify the weight of state's weight
+        coeff += self.similiarity_to(other) * 1 #Here, maybe increase the weight of similiarity
+        coeff += other.best_weight()[1] * 0 #Here, maybe modify the weight of state's weight
 
         if (other.best_weight()[0]) == "":
             #termdraw.f.write(str(other.dir_weights))
@@ -91,6 +91,7 @@ class StateList:
 
     def save(self):
         #self.states = sorted(self.states)        o = open(statesave_filename, "w+")
+        s = open(statesave_filename, "w+")
         for i, state in enumerate(self.states):
             state.id = i
             o.write(str(state.id) + " " + str(state.apple_dir) + " ")
@@ -100,8 +101,8 @@ class StateList:
                 else:
                     o.write("0 ")
             for ii in ["up", "left", "right", "down"]:
-                o.write(str(state.dir_weights[ii]))
-            o.write("\n")
+                s.write(str(state.dir_weights[ii]))
+            s.write("\n")
     
     def __iter__(self):
         return iter(self.states)
@@ -122,7 +123,7 @@ def find_best_state(state: State, statearr: StateList):
             best_other = other_state
             best_coeff = state.coeff_with(other_state)
     
-    if best_coeff >= 1.9: #Here, maybe modify the value to use existing state
+    if best_coeff >= 0.95: #Here, maybe modify the value to use existing state
         #print("Used existing state with coeff ", best_coeff, file=o)
         return best_other
 
@@ -132,7 +133,20 @@ def find_best_state(state: State, statearr: StateList):
         return state
 
 turns = 0
+def eaten(snake):
+    global moves, turns
+    [i.reward(custom_val=len(snake.tail)/10-0.2) for i in moves[-100:]] #Here, modify the amount of rewarded moves
+    moves = []
+    o.writelines(["jablko snězeno"])
+    turns = 0
 
+def collided(snake):
+    global moves, turns
+    [i.punish(custom_val=0.4) for i in moves[-100:]] #Here, modify the amount of rewarded moves
+    moves = []
+    turns = 0
+
+    
 def ml(snake : Snake, apple : Apple):
     global moves, turns, current_state
     turns += 1
@@ -156,28 +170,26 @@ def ml(snake : Snake, apple : Apple):
     if snake.y-1 == -1:
         poss_dir["up"] = False
 
-    if (snake.x == apple.x and snake.y == apple.y):
-        [i.reward() for i in moves[-100:]] #Here, modify the amount of rewarded moves
-        moves = []
-        o.writelines(["jablko snězeno"])
-        turns = 0
     apple_dir = math.atan2(apple.x - snake.x, apple.y - snake.y) + math.pi
 
     state = State(-1,apple_dir, poss_dir)
-    #print("1own_state: ", state, file=o)
+
     current_state = state
-    if len(moves) > 100:
+    if len(moves) > 50:
         #print(statelist, file=termdraw.f)
-        moves[0].punish(custom_val=0.01)
+        moves[0].punish(custom_val=0.1)
         moves = moves[1:]
 
     best_state  = find_best_state(state, statelist)
-    #print("2beststate: ", best_state, file=o)
     moves.append(Move(best_state, best_state.best_weight()[0]))
-    #o.write(str(turns) + " \n")
-    #o.write("Pocet stateu: " + str(len(statelist.states)) + "\n")
-
-    if turns > 2000:
-        [i.punish(custom_val=0.01) for i in moves]
+   # print(turns)
+    if turns > 100:
+        if len(snake.tail):
+            [i.punish(custom_val=0.2) for i in moves]
+        else:
+            [i.reward(custom_val=len(snake.tail)/10-0.2) for i in moves]
+        print("timeout", end=" ")
+        
+        #time.sleep(0.5)
         return ""
     return best_state.best_weight()[0]

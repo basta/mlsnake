@@ -2,6 +2,7 @@ import termdraw
 bounds = [20,20]
 import random
 import time
+
 class Field:
     def __init__(self, x, y, t="empty"):
         self.x = x
@@ -62,14 +63,16 @@ class Snake:
         for i in self.tail[1:]:
             if self.x == i.x and self.y == i.y:
                 termdraw.f.write("Selfcollide\n")
+                print("Selfcollide", end=" ")
                 if termdraw.stdscr != None:
-                    time.sleep(1)
+                    time.sleep(0.2)
                 return False
 
         if (self.x < 0 or self.x >= bounds[0] or self.y < 0 or self.y >= bounds[1]):
             if termdraw.stdscr != None:
                 termdraw.stdscr.addstr(20, 30, str("Kolize"))
             termdraw.f.write("wallcollide\n")
+            print("Wallcollide")
             time.sleep(1)
             return False
         return True
