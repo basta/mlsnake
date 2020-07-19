@@ -127,13 +127,13 @@ if __name__ == "__main__":
                 ml.turns = 0
                 apple.consume()
                 
-                if generations > 500:
+                if generations > 200:
                     graphical = True
                     termdraw.start()
                     termdraw.draw_box()
                     snake.draw(field_map)
 
-                if generations > 150:
+                if generations > 100:
                     ml.statelist.save()
                     results.close()
                     plotit.draw(open("results.txt","r"))

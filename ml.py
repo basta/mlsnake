@@ -50,11 +50,11 @@ class State:
     def coeff_with(self, other) -> float:
         coeff = 0
         coeff += self.similiarity_to(other) * 1 #Here, maybe increase the weight of similiarity
-        coeff += other.best_weight()[1] * 0 #Here, maybe modify the weight of state's weight
+        #coeff += other.best_weight()[1] * 0 #Here, maybe modify the weight of state's weight
 
-        if (other.best_weight()[0]) == "":
-            #termdraw.f.write(str(other.dir_weights))
-            pass
+        # if (other.best_weight()[0]) == "":
+        #     #termdraw.f.write(str(other.dir_weights))
+        #     pass
 
         #print("dir weights: ", self.dir_weights,other.dir_weights, file=o)
         for i in self.poss_dir:
