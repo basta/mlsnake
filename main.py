@@ -127,7 +127,7 @@ if __name__ == "__main__":
                 ml.turns = 0
                 apple.consume()
                 
-                if generations > 200:
+                if generations > 90:
                     graphical = True
                     termdraw.start()
                     termdraw.draw_box()
