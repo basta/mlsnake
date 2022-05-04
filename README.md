@@ -1,5 +1,8 @@
 # mlsnake
 A snake AI that learns by itself to do the best moves:
-!()[https://imgur.com/a/OVqgv9o]
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
-<video src='https://imgur.com/a/OVqgv9o' width=180/>
+
+!(image)[https://static01.bbi.io/2Wt9Tk.gif]
+
+https://user-images.githubusercontent.com/26662510/166826839-4b011a29-9157-4f49-b6aa-c1cf12be8779.mp4
+
+Run using `python3 main.py`
